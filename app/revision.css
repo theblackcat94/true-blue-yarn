@@ -50,6 +50,35 @@ body { background: var(--cream); color: var(--ink); }
 .episode-subheading a { border-color: #4f4035; }
 .platform-links { display: flex; gap: 24px; margin-top: 30px; font-size: 12px; font-weight: 800; }
 .platform-links a { border-bottom: 1px solid #6e5b4c; padding-bottom: 6px; }
+.home-latest .episode-subheading, .home-latest .episode-grid, .home-latest .platform-links { max-width: 900px; margin-left: auto; margin-right: auto; }
+.home-latest .episode-subheading { margin-top: 44px; margin-bottom: 18px; }
+.home-latest .episode-subheading h3 { font-size: 22px; }
+.home-latest .episode-grid { gap: 16px; }
+.home-latest .episode-grid .episode-info { min-height: 0; padding: 19px 22px 22px; }
+.home-latest .episode-grid .episode-info h3 { font-size: 19px; margin: 11px 0 7px; }
+.home-latest .episode-grid .episode-info .inline-link { margin-top: 13px; }
+.home-latest .platform-links { margin-top: 24px; }
+
+/* A separate review page keeps the current homepage hero intact. */
+.trial-hero { display: grid; grid-template-columns: 46% 54%; min-height: 670px; background: #eee6dc; }
+.trial-hero-copy { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(74px, 8vw, 126px) 8% 48px 11.5%; }
+.trial-kicker { font-size: 10px; font-weight: 800; letter-spacing: .2em; color: #8c5a48; }
+.trial-kicker span { margin: 0 6px; }
+.trial-hero h1 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(58px, 5.6vw, 92px); line-height: 1.02; letter-spacing: -.06em; margin: 34px 0 27px; }
+.trial-hero h1 em { font-weight: 400; color: #9c6754; }
+.trial-hero-copy > p { max-width: 490px; font-size: 17px; line-height: 1.72; color: #63564c; margin: 0; }
+.trial-hero-actions { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; margin-top: 34px; }
+.trial-hero-actions .inline-link { margin: 0; }
+.trial-back { margin-top: auto; padding-top: 50px; font-size: 12px; font-weight: 700; border-bottom: 1px solid #9b8574; padding-bottom: 6px; }
+.trial-back:hover { color: #9c6754; }
+.trial-hero-media { position: relative; overflow: hidden; background: #181c17; min-height: 670px; }
+.trial-hero-media > img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; filter: saturate(.75); }
+.trial-hero-media:after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #101812b8); pointer-events: none; }
+.trial-hero-media > div { position: absolute; z-index: 1; bottom: 28px; left: 30px; right: 30px; display: flex; align-items: end; justify-content: space-between; gap: 22px; color: #fff; }
+.trial-hero-media > div > span { font-size: 9px; font-weight: 800; letter-spacing: .19em; }
+.trial-hero-media > div > a { background: #f8f3eb; color: #302923; padding: 12px 16px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.trial-hero-media > div > a:hover { background: #e7d4c4; }
+.trial-latest { background: #fbf8f3; }
 
 .home-about-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 11%; border-top: 1px solid #ded4ca; background: #f2ece4; }
 .home-about-strip h2 { font-size: clamp(50px, 5vw, 78px); margin: 24px 0 0; }
@@ -136,6 +165,7 @@ body { background: var(--cream); color: var(--ink); }
   .editorial-hero h1 { font-size: clamp(55px, 6vw, 80px); }
   .home-last-word { display: block; }
   .quiet-sponsor { width: fit-content; margin-top: 60px; }
+  .trial-hero h1 { font-size: clamp(50px, 6vw, 74px); }
 }
 
 @media (max-width: 760px) {
@@ -162,4 +192,12 @@ body { background: var(--cream); color: var(--ink); }
   .footer-bottom { margin-top: 0; }
   .interior-hero { min-height: 0; padding: 80px 5% 45px; }
   .interior-hero h1 { font-size: clamp(52px, 11vw, 80px); }
+  .trial-hero { display: flex; flex-direction: column-reverse; }
+  .trial-hero-media { min-height: 340px; height: 45vh; max-height: 520px; }
+  .trial-hero-copy { padding: 54px 5% 48px; }
+  .trial-hero h1 { font-size: clamp(52px, 11vw, 76px); margin: 25px 0; }
+  .trial-hero-copy > p { font-size: 16px; }
+  .trial-back { padding-top: 45px; }
+  .trial-hero-media > div { left: 18px; right: 18px; bottom: 18px; }
+  .trial-hero-media > div > span { display: none; }
 }
