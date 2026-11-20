@@ -23,4 +23,6 @@ Run `npm run build:pages` to produce a static export in `out/`. The script deriv
 
 The YouTube embeds on Home and Episodes come from the episode index. The Spotify show embed uses the supplied show URL. The original site images are preserved in `public/images/original/`: Natasha's portrait and the veteran artwork from About, the Wounded Heroes image from Projects, the KSC Law sponsor logo from Home, and the source site's favicon.
 
+The supplied True Blue Yarn wordmarks and Y mark are in `public/images/brand/`. The header uses the stylized wordmark, the footer uses the alternate wordmark and Y mark, and `app/brand.css` applies their warm grey and black palette across the site.
+
 The public site links to True Blue Yarn's YouTube, Spotify and Instagram. Every page footer points to Open Arms, Wounded Heroes and RSL Australia for veteran support. The updates form prepares an email request to Natasha; it is not an automated mailing list. Connect a newsletter provider and publish a privacy notice before replacing it with a hosted signup form. Donations, merchandise and the separate foundation archive discussed in the meeting are future projects and are not represented as live services here.

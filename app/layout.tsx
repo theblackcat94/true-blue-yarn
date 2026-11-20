@@ -3,6 +3,7 @@ import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 import { sitePath } from "../lib/site-path";
 import "./globals.css";
 import "./revision.css";
+import "./brand.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.GITHUB_REPOSITORY
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "True Blue Yarn | Stories with purpose",
   description: "True Blue Yarn is an independent Australian podcast and production platform sharing stories of service, transition, identity and connection.",
   openGraph: { title: "True Blue Yarn | Stories that stay with us", description: "Real conversations about service, identity and connection.", images: [sitePath("/images/original/natasha-portrait.jpg")] },
-  icons: { icon: sitePath("/favicon.svg") },
+  icons: { icon: sitePath("/images/brand/y-mark.jpg") },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
